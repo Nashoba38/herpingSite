@@ -10,6 +10,7 @@ import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
   styleUrls: ["./site-home.component.scss"]
 })
 export class SiteHomeComponent implements OnInit {
+  title = 'Découvrez la diversité de la faune autour du globe !';
   constructor(private zone: NgZone) {}
 
   ngOnInit() {}
