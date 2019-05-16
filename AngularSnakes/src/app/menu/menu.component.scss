@@ -6,6 +6,7 @@
 
 #navbarSupportedContent {
   justify-content: flex-end;
+  text-align: end;
 
   .dropdown:hover .dropdown-menu {
     display: block;
@@ -38,7 +39,6 @@
   .collapse.show {
     display: flex;
     justify-content: flex-end;
-    text-align: end;
   }
 
   a {
