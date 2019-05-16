@@ -1,0 +1,174 @@
+@import './mixins/_variables.scss';
+
+@import './mixins/_underlining.scss';
+
+#sss {
+  font-family: 'Nanum Brush Script', cursive;
+
+
+
+  #menu {
+    padding: 0px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: black;
+    height: 70px;
+
+    .navbar-brand {
+      display: flex;
+      flex-flow: wrap row;
+
+      p {
+        margin-left: 2rem;
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 3rem;
+        color: black;
+      }
+    }
+  }
+
+  // css du header
+  .perso {
+    li {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    a {
+      color: black;
+      transition: 0.3s all ease-in;
+      font-size: 1.5rem;
+      padding: 1rem;
+      height: 70px;
+
+      &:hover {
+        color: #f09b3b;
+        background-color: #2b2b2b;
+        font-weight: bold;
+      }
+    }
+  }
+
+  //  #   #   #
+  // css du footer
+  footer {
+    padding: 2rem;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      height: 55px;
+      width: 55px;
+      -webkit-animation: rotateEnv 0.8s linear;
+      -moz-animation: rotateEnv 0.8s linear;
+      animation: rotateEnv 0.8s linear;
+
+      &:hover {
+        -webkit-animation: rotate 0.8s infinite;
+        -moz-animation: rotate 0.8s infinite;
+        animation: rotate 0.8s infinite;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 1rem;
+
+      h3 {
+        margin-top: 0.8rem;
+        margin-left: 1rem;
+      }
+
+      img:hover {
+        -webkit-animation: rotate 0.8s infinite;
+        -moz-animation: rotate 0.8s infinite;
+        animation: rotate 0.8s infinite;
+
+      }
+
+      .pinko {
+        color: #ed1343;
+      }
+
+      .marginFooter {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        justify-content: space-between;
+
+        a {
+          cursor: default;
+          text-decoration: none;
+          padding: 0.5rem;
+          color: #ed7c13;
+          transition: 0.1s all ease-in;
+          font-size: 25px;
+
+
+          &:hover {
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .icons {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 3rem;
+
+        a {
+          transition: 0.2s all ease-in;
+          color: white;
+
+          &:hover {
+            color: #ed8713;
+            transform: rotate(-20deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+//  #   #   #
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotateEnv {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotateEnv {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateEnv {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}

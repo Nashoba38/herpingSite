@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <nav>
+      <a routerLink="/cards" class="btn mx-2 mt-5">Miniatures <i class="fas fa-image"></i></a>
+      <a routerLink="/snakes" class="btn mx-2 mt-5">Liste <i class="fas fa-bars"></i></a>
+    </nav>
+  </div>
+</div>
+
+<div class="listOfSnakes container-fluid px-5 mt-5">
+  <div class="background row">
+    <div class="col-12 d-flex justify-content-center pt-5">
+      <h5 class="animated jello">Quel serpent voulez-vous découvrir ?</h5>
+    </div>
+
+    <div class="listeGauche col-12 col-sm-6">
+      <a *ngFor="let snake of snakes | slice:0: 7" routerLink="/detail/{{snake.id}}" class="animated fadeInLeft">
+        <p><i class="fas fa-angle-right pr-3"></i><strong>{{snake.FrenchName}}</strong> - <i>{{ snake.LatinName }}</i>
+        </p>
+      </a>
+    </div>
+    <hr>
+    <div class="listeDroite col-12 col-sm-6">
+      <a *ngFor="let snake of snakes | slice:7: 13" routerLink="/detail/{{snake.id}}" class="animated fadeInRight">
+        <p><strong>{{snake.FrenchName}}</strong> - <i>{{ snake.LatinName }}</i><i class="fas fa-angle-left pl-3"></i>
+        </p>
+      </a>
+    </div>
+  </div>
+</div>

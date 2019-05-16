@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <nav>
+      <a routerLink="/cards" class="btn mx-2 mt-5">Miniatures <i class="fas fa-image"></i></a>
+      <a routerLink="/snakes" class="btn mx-2 mt-5">Liste <i class="fas fa-bars"></i></a>
+    </nav>
+  </div>
+</div>
+
+<div class="MiniOfSnakes container mt-5 px-5">
+  <div class="col-12 d-flex justify-content-center pb-5">
+    <h5 class="animated jello">Quel serpent voulez-vous découvrir ?</h5>
+  </div>
+  <div class="background row px-1">
+    <div id="cards" *ngFor="let snake of snakes" class="card col-12 col-md-6 col-xl-4 mb-3">
+      <img id="cardImage" class="card-img-top" src="http://127.0.0.1:8000/uploads/image/snakes/{{snake.Image}}"
+        alt="{{snake.FrenchName}}" title="{{snake.FrenchName}}">
+      <div class="card-body">
+        <h5 class="card-title">{{snake.FrenchName}}</h5>
+        <p class="card-text">{{snake.LatinName}}</p>
+        <a routerLink="/detail/{{snake.id}}" class="btn">Fiche descriptive</a>
+      </div>
+    </div>
+  </div>
+</div>

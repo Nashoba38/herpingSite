@@ -1,0 +1,69 @@
+<div class="titreBox container-fluid ">
+  <hr>
+  <div class="row mt-5">
+    <div class="col-12" *ngIf="lezard">
+      <h2 class="animated slideInLeft">{{ lezard.FrenchName }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12" *ngIf="lezard">
+      <h4><i>{{ lezard.LatinName }}</i></h4>
+    </div>
+  </div>
+
+  <div id="boutonRetour" class="row">
+    <a routerLink="/lezardsCards" class="retour mx-2 mt-5">Retour aux Miniatures <i class="fas fa-image"></i></a>
+    <a routerLink="/lezards" class="retour mx-2 mt-5">Retour à la Liste <i class="fas fa-bars"></i></a>
+  </div>
+
+</div>
+
+
+<div class="content container">
+  <div class="insert row p-5">
+    <div class="col-12 col-md-6 mb-5">
+      <div>
+        <h6><i class="fas fa-ruler-horizontal"> </i><strong> Taille de l'animal : </strong></h6>
+        <p>{{ lezard.Taille }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-tree"> </i><strong> Habitat : </strong></h6>
+        <p>{{ lezard.Habitat }}</p>
+      </div>
+      <br>
+      <h6><i class="fas fa-globe-africa"> </i><strong>Distribution au Maroc : </strong></h6>
+      <img src="http://127.0.0.1:8000/uploads/image/distribution/{{lezard.Distribution}}" alt="{{lezard.FrenchName}}"
+        title="{{lezard.FrenchName}}">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <h6><i class="fas fa-paw"> </i><strong> Description : </strong></h6>
+        <p>{{ lezard.Description }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-feather-alt"> </i><strong> Moeurs : </strong></h6>
+        <p>{{ lezard.Comportement }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-venus-mars"> </i><strong> Reproduction : </strong></h6>
+        <p>{{ lezard.Reproduction }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="photoBox container-fluid mt-5">
+  <div class="row" *ngIf="lezard">
+    <img src="http://127.0.0.1:8000/uploads/image/lezards/{{lezard.Image}}" alt="{{lezard.FrenchName}}"
+      title="{{lezard.FrenchName}}">
+  </div>
+</div>
+
+
+<script>
+
+
+</script>

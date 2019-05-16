@@ -1,0 +1,75 @@
+#accueil {
+  text-align: center;
+  line-height: 2rem;
+  width: 80%;
+  background-color: rgba(255, 240, 172, 0.788);
+  border: 0px solid white;
+  border-radius: 6px;
+  padding: 4% 5%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  font-size: 1.2rem;
+}
+
+#chartdiv {
+  path {
+
+    // height: 900px !important;
+
+  }
+
+  rect {
+    height: 900px !important;
+
+
+  }
+}
+
+// Flèche vers le bas
+
+
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 95%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px rgb(0, 0, 0) solid;
+  border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px rgb(0, 0, 0) solid;
+  border-bottom: 1px rgb(0, 0, 0) solid;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}

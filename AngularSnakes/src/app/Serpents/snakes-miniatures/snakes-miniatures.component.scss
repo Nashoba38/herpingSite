@@ -1,0 +1,40 @@
+.MiniOfSnakes {
+
+  .background {
+
+    #cards {
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 0;
+      border: 3px solid rgb(0, 0, 0);
+      text-align: center;
+
+      #cardImage {
+        border-radius: 0;
+      }
+
+      p {
+        font-style: italic;
+      }
+
+      h5 {
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+}
+.btn {
+  background-color: rgb(247, 176, 63);
+  color: black;
+
+  &:hover {
+    background-color: black;
+    color: rgb(247, 176, 63);
+    border: 1px solid rgb(247, 176, 63);
+  }
+}
+
+h5 {
+  color: white;
+}

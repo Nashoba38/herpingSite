@@ -1,0 +1,124 @@
+:root {
+  --c: 237, 20, 80; }
+
+a {
+  display: inline-block;
+  position: relative; }
+  @media screen and (min-width: 992px) {
+    a .underline::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ed9a14;
+      height: 1px;
+      width: 0;
+      transition: 0.3s all ease-out; }
+    a:hover .underline::after {
+      width: 75%; } }
+
+#sss {
+  font-family: 'Nanum Brush Script', cursive; }
+  #sss #menu {
+    padding: 0px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: black; }
+    #sss #menu .navbar-brand {
+      display: flex;
+      flex-flow: wrap row; }
+      #sss #menu .navbar-brand p {
+        margin-left: 2rem;
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 3rem;
+        color: black; }
+  #sss .perso li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; }
+  #sss .perso a {
+    color: black;
+    transition: 0.3s all ease-in;
+    font-size: 1.5rem;
+    padding: 1rem; }
+    #sss .perso a:hover {
+      color: #f09b3b;
+      background-color: #2b2b2b;
+      font-weight: bold; }
+  #sss footer {
+    padding: 2rem;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    #sss footer img {
+      height: 55px;
+      width: 55px;
+      -webkit-animation: rotateEnv 0.8s linear;
+      -moz-animation: rotateEnv 0.8s linear;
+      animation: rotateEnv 0.8s linear; }
+      #sss footer img:hover {
+        -webkit-animation: rotate 0.8s infinite;
+        -moz-animation: rotate 0.8s infinite;
+        animation: rotate 0.8s infinite; }
+    #sss footer ul {
+      list-style-type: none;
+      margin-top: 1rem; }
+      #sss footer ul h3 {
+        margin-top: 0.8rem;
+        margin-left: 1rem; }
+      #sss footer ul img:hover {
+        -webkit-animation: rotate 0.8s infinite;
+        -moz-animation: rotate 0.8s infinite;
+        animation: rotate 0.8s infinite; }
+      #sss footer ul .pinko {
+        color: #ed1343; }
+      #sss footer ul .marginFooter {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        justify-content: space-between; }
+        #sss footer ul .marginFooter a {
+          cursor: default;
+          text-decoration: none;
+          padding: 0.5rem;
+          color: #ed7c13;
+          transition: 0.1s all ease-in;
+          font-size: 25px; }
+          #sss footer ul .marginFooter a:hover {
+            font-weight: bold;
+            cursor: pointer; }
+      #sss footer ul .icons {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 3rem; }
+        #sss footer ul .icons a {
+          transition: 0.2s all ease-in;
+          color: white; }
+          #sss footer ul .icons a:hover {
+            color: #ed8713;
+            transform: rotate(-20deg); }
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes rotateEnv {
+  100% {
+    -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes rotateEnv {
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+@keyframes rotateEnv {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+/*# sourceMappingURL=menu.css.map */

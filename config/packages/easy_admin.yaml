@@ -1,0 +1,83 @@
+easy_admin:
+  entities:
+    Snakes:
+      class: App\Entity\Snakes
+      # List the entity class name you want to manage
+      #- App\Entity\Snakes
+      list:
+        fields:
+          - { property: 'image', type: 'image', base_path: '%app.path.snakes_image%' }
+          - { property: 'french_name', label: 'Nom Vernaculaire'}
+          - { property: 'latin_name', label: 'Nom Latin'}
+          - { property: 'description', label: 'Description'}
+          - { property: 'taille', label: "Taille de l'animal"}
+          - { property: 'nourriture', label: 'Régime alimentaire'}
+          - { property: 'distribution', type: 'image', base_path: '%app.path.distribution_image%'}
+          - { property: 'habitat', label: 'Habitat'}
+          - { property: 'comportement', label: 'Moeurs'}
+          - { property: 'reproduction', label: 'Reproduction'}
+
+      show:
+        fields:
+          - { property: 'image', type: 'image', base_path: '%app.path.snakes_image%' }
+          - { property: 'french_name', label: 'Nom Vernaculaire'}
+          - { property: 'latin_name', label: 'Nom Latin'}
+          - { property: 'description', label: 'Description'}
+          - { property: 'taille', label: "Taille de l'animal"}
+          - { property: 'nourriture', label: 'Régime alimentaire'}
+          - { property: 'distribution', type: 'image', base_path: '%app.path.distribution_image%' }
+          - { property: 'habitat', label: 'Habitat'}
+          - { property: 'comportement', label: 'Moeurs'}
+          - { property: 'reproduction', label: 'Reproduction'}
+      form:
+        fields:
+          - { property: 'imageFile', type: 'file' }
+          - { property: 'french_name', label: 'Nom Vernaculaire'}
+          - { property: 'latin_name', label: 'Nom Latin'}
+          - { property: 'description', label: 'Description'}
+          - { property: 'taille', label: "Taille de l'animal"}
+          - { property: 'nourriture', label: 'Régime alimentaire'}
+          - { property: 'distributionFile', type: 'file' }
+          - { property: 'habitat', label: 'Habitat'}
+          - { property: 'comportement', label: 'Moeurs'}
+          - { property: 'reproduction', label: 'Reproduction'}
+
+    Lezards:
+      class: App\Entity\Lezards
+      # List the entity class name you want to manage
+      #- App\Entity\Lezards
+      list:
+        fields:
+          - { property: 'image', type: 'image', base_path: '%app.path.lezards_image%' }
+          - { property: 'french_name', label: 'Nom Vernaculaire'}
+          - { property: 'latin_name', label: 'Nom Latin'}
+          - { property: 'description', label: 'Description'}
+          - { property: 'taille', label: "Taille de l'animal"}
+          - { property: 'distribution', type: 'image', base_path: '%app.path.distribution_image%'}
+          - { property: 'habitat', label: 'Habitat'}
+          - { property: 'comportement', label: 'Moeurs'}
+          - { property: 'reproduction', label: 'Reproduction'}
+
+      show:
+        fields:
+          - { property: 'image', type: 'image', base_path: '%app.path.lezards_image%' }
+          - { property: 'french_name', label: 'Nom Vernaculaire'}
+          - { property: 'latin_name', label: 'Nom Latin'}
+          - { property: 'description', label: 'Description'}
+          - { property: 'taille', label: "Taille de l'animal"}
+          - { property: 'distribution', type: 'image', base_path: '%app.path.distribution_image%' }
+          - { property: 'habitat', label: 'Habitat'}
+          - { property: 'comportement', label: 'Moeurs'}
+          - { property: 'reproduction', label: 'Reproduction'}
+      form:
+        fields:
+          - { property: 'imageFile', type: 'file' }
+          - { property: 'french_name', label: 'Nom Vernaculaire'}
+          - { property: 'latin_name', label: 'Nom Latin'}
+          - { property: 'description', label: 'Description'}
+          - { property: 'taille', label: "Taille de l'animal"}
+          - { property: 'distributionFile', type: 'file' }
+          - { property: 'habitat', label: 'Habitat'}
+          - { property: 'comportement', label: 'Moeurs'}
+          - { property: 'reproduction', label: 'Reproduction'}
+

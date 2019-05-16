@@ -1,0 +1,74 @@
+<div class="titreBox container-fluid ">
+  <hr>
+  <div class="row mt-5">
+    <div class="col-12" *ngIf="snake">
+      <h2 class="animated slideInLeft">{{ snake.FrenchName }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12" *ngIf="snake">
+      <h4><i>{{ snake.LatinName }}</i></h4>
+    </div>
+  </div>
+
+  <div id="boutonRetour" class="row">
+    <a routerLink="/cards" class="retour mx-2 mt-5">Retour aux Miniatures <i class="fas fa-image"></i></a>
+    <a routerLink="/snakes" class="retour mx-2 mt-5">Retour à la Liste <i class="fas fa-bars"></i></a>
+  </div>
+
+</div>
+
+
+<div class="content container">
+  <div class="insert row p-5">
+    <div class="col-12 col-md-6 mb-5">
+      <div>
+        <h6><i class="fas fa-ruler-horizontal"></i><strong> Taille de l'animal : </strong></h6>
+        <p>{{ snake.Taille }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-utensils"></i><strong> Régime alimentaire : </strong></h6>
+        <p>{{ snake.Nourriture }}</p>
+      </div>
+      <br>
+      <h6><i class="fas fa-globe-africa"></i><strong>Distribution au Maroc : </strong></h6>
+      <img src="http://127.0.0.1:8000/uploads/image/distribution/{{snake.Distribution}}" alt="{{snake.FrenchName}}"
+        title="{{snake.FrenchName}}">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <h6><i class="fas fa-paw"></i> <strong> Description : </strong></h6>
+        <p>{{ snake.Description }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-feather-alt"></i><strong> Moeurs : </strong></h6>
+        <p>{{ snake.Comportement }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-venus-mars"> </i><strong> Reproduction : </strong></h6>
+        <p>{{ snake.Reproduction }}</p>
+      </div>
+      <br>
+      <div>
+        <h6><i class="fas fa-tree"></i><strong> Habitat : </strong></h6>
+        <p>{{ snake.Habitat }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="photoBox container-fluid mt-5">
+  <div class="row" *ngIf="snake">
+    <img src="http://127.0.0.1:8000/uploads/image/snakes/{{snake.Image}}" alt="{{snake.FrenchName}}"
+      title="{{snake.FrenchName}}">
+  </div>
+</div>
+
+
+<script>
+
+
+</script>
