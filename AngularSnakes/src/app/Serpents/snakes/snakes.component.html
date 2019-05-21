@@ -1,8 +1,9 @@
-<div id="topSnake" class="row">
-  <div class="col-12 d-flex justify-content-center">
+<div id="Boutonsuite" class="row">
+  <div class="wrapper col-12 d-flex justify-content-center">
     <nav>
-      <a routerLink="/cards" class="btn mx-2 mt-5">Miniatures <i class="fas fa-image"></i></a>
-      <a routerLink="/snakes" class="btn mx-2 mt-5">Liste <i class="fas fa-bars"></i></a>
+      <a routerLink="/cards" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Miniatures <i class="fas fa-image"></i></a>
+      <a routerLink="/snakes" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Liste <i class="fas fa-bars"></i></a>
+      <a routerLink="/marocHome" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour au pays <i class="fas fa-globe-africa"></i></a>
     </nav>
   </div>
 </div>
@@ -14,7 +15,7 @@
     </div>
 
     <div class="listeGauche col-12 col-sm-6">
-      <a *ngFor="let snake of snakes | slice:0: 7" routerLink="/detail/{{snake.id}}" class="animated fadeInLeft">
+      <a *ngFor="let snake of snakes | slice:0: 7" [routerLink]="['/detail', snake.id]" class="animated fadeInLeft">
         <p><i class="fas fa-angle-right pr-3"></i><strong>{{snake.FrenchName}}</strong> - <i>{{ snake.LatinName }}</i>
         </p>
       </a>

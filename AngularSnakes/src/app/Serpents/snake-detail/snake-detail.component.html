@@ -1,5 +1,4 @@
 <div class="titreBox container-fluid ">
-  <hr>
   <div class="row mt-5">
     <div class="col-12" *ngIf="snake">
       <h2 class="animated slideInLeft">{{ snake.FrenchName }}</h2>
@@ -12,10 +11,16 @@
   </div>
 
   <div id="boutonRetour" class="row">
-    <a routerLink="/cards" class="retour mx-2 mt-5">Retour aux Miniatures <i class="fas fa-image"></i></a>
-    <a routerLink="/snakes" class="retour mx-2 mt-5">Retour à la Liste <i class="fas fa-bars"></i></a>
+    <div class="wrapper col-12 d-flex justify-content-center">
+      <nav>
+        <a routerLink="/cards" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour aux Miniatures <i
+            class="fas fa-image"></i></a>
+        <a routerLink="/snakes" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour à la Liste <i
+            class="fas fa-bars"></i></a>
+        <a routerLink="/marocHome" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour au Pays <i class="fas fa-globe-africa"></i></a>
+      </nav>
+    </div>
   </div>
-
 </div>
 
 

@@ -11,12 +11,12 @@ export class LezardsService {
   constructor(private http: HttpClient) { }
 
   getLezards(): Observable<Lezards[]> {
-    const lezards = this.http.get<Lezards[]>('http://localhost:8000/api/lezardsDetails');
+    const lezards = this.http.get<Lezards[]>('https://dylan-bouchet.simplon-grenoble.fr/api/lezardsDetails');
     return lezards;
   }
 
   getLezard(id: number): Observable<Lezards[]> {
-    const lezardById = this.http.get<Lezards[]>('http://localhost:8000/api/lezardsDetails/'+id);
+    const lezardById = this.http.get<Lezards[]>('https://dylan-bouchet.simplon-grenoble.fr/api/lezardsDetails/'+id);
     return lezardById;
   }
 }

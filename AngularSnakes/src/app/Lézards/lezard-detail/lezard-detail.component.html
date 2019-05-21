@@ -1,21 +1,26 @@
 <div class="titreBox container-fluid ">
-  <hr>
   <div class="row mt-5">
     <div class="col-12" *ngIf="lezard">
       <h2 class="animated slideInLeft">{{ lezard.FrenchName }}</h2>
     </div>
   </div>
-  <div class="row">
+  <div class="row mb-5">
     <div class="col-12" *ngIf="lezard">
       <h4><i>{{ lezard.LatinName }}</i></h4>
     </div>
   </div>
 
   <div id="boutonRetour" class="row">
-    <a routerLink="/lezardsCards" class="retour mx-2 mt-5">Retour aux Miniatures <i class="fas fa-image"></i></a>
-    <a routerLink="/lezards" class="retour mx-2 mt-5">Retour à la Liste <i class="fas fa-bars"></i></a>
+    <div class="wrapper col-12 d-flex justify-content-center">
+      <nav>
+        <a routerLink="/cards" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour aux Miniatures <i
+            class="fas fa-image"></i></a>
+        <a routerLink="/lezards" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour à la Liste <i
+            class="fas fa-bars"></i></a>
+        <a routerLink="/marocHome" class="btn btn--border btn--primary btn--animated mx-2 mt-5">Retour au Pays <i class="fas fa-globe-africa"></i></a>
+      </nav>
+    </div>
   </div>
-
 </div>
 
 

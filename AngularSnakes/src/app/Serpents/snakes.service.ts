@@ -8,15 +8,16 @@ import { Snakes } from './snake';
 })
 export class SnakesService {
 
+
   constructor(private http: HttpClient) { }
 
   getSnakes(): Observable<Snakes[]> {
-    const snakes = this.http.get<Snakes[]>('http://localhost:8000/api/snakesDetails');
+    const snakes = this.http.get<Snakes[]>('https://dylan-bouchet.simplon-grenoble.fr/api/snakesDetails');
     return snakes;
   }
 
   getSnake(id: number): Observable<Snakes[]> {
-    const snakeById = this.http.get<Snakes[]>('http://localhost:8000/api/snakesDetails/'+id);
+    const snakeById = this.http.get<Snakes[]>('https://dylan-bouchet.simplon-grenoble.fr/api/snakesDetails/'+id);
     return snakeById;
   }
 }

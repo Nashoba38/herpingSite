@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
 
-  background: black;
+  background-image: url(./assets/imageSnakes/blackwall.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   h1 {
     font-family: 'Architects Daughter', cursive;
