@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
@@ -16,8 +15,6 @@ import { LezardsComponent } from "./Lézards/lezards/lezards.component";
 import { LezardMiniaturesComponent } from "./Lézards/lezards-miniatures/lezards-miniatures.component";
 import { LezardDetailComponent } from "./Lézards/lezard-detail/lezard-detail.component";
 import { SiteHomeComponent } from "./site-home/site-home.component";
-
-
 
 @NgModule({
   declarations: [
